@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "ea7dc924-dd62-43c0-9636-d1ae1b3f2934",
+		"name": "app_list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25576943",
+		"_collection_link": "https://universal-equinox-800877.postman.co/workspace/Team-Workspace~d869bcde-f814-4d3a-8adc-b9c453740703/collection/25576943-ea7dc924-dd62-43c0-9636-d1ae1b3f2934?action=share&source=collection_link&creator=25576943"
+	},
+	"item": [
+		{
+			"name": "createLIst",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Employee List\",\r\n  \"customProperties\": [\r\n    {\r\n      \"title\": \"city\",\r\n      \"fallbackValue\": \"Unknown\"\r\n    },\r\n    {\r\n      \"title\": \"department\",\r\n      \"fallbackValue\": \"General\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/lists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creareUserList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1ef1427b-a8a7-4190-96bf-338e9991f90d"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/lists/6647119876647516f1f409f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"lists",
+						"6647119876647516f1f409f1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
