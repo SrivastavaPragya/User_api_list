@@ -39,3 +39,4 @@ This Markdown formatted text provides a clear description of your API endpoints,
 - **Ouput:**
 
 
+![output](https://github.com/SrivastavaPragya/User_api_list/assets/126488693/bffa03da-51e2-4844-9c26-df9a5800cc25)
